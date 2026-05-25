@@ -1,0 +1,192 @@
+/* ==========================================
+   ANIMACIONES
+   ========================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   FONDO GENERAL
+   ========================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f9;
+    /* Fondo suave unificado */
+    color: #2f3542;
+    padding: 30px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* TITULO */
+h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #1e3799;
+    /* Azul oscuro opaco */
+    border-bottom: 2px solid #4a69bd;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ==========================================
+   MENU DE NAVEGACIÓN
+   ========================================== */
+a {
+    text-decoration: none;
+    color: white;
+    background: #4a69bd;
+    /* Azul pizarra opaco */
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(74, 105, 189, 0.2);
+}
+
+a:hover {
+    background: #1e3799;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(30, 55, 153, 0.3);
+}
+
+/* ==========================================
+   TABLAS (Estilo Profesional)
+   ========================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    animation: fadeIn 1s ease-out;
+}
+
+th {
+    background: #4a69bd;
+    /* Azul opaco principal */
+    color: white;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #f1f2f6;
+    font-size: 14px;
+    color: #444;
+}
+
+tr:hover {
+    background: #f8f9fa;
+}
+
+/* IMAGEN PRODUCTO EN TABLA */
+img {
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* ==========================================
+   FORMULARIOS E INPUTS
+   ========================================== */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    width: 260px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background: #fdfdfd;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4a69bd;
+    box-shadow: 0 0 8px rgba(74, 105, 189, 0.2);
+}
+
+/* ==========================================
+   BOTONES
+   ========================================== */
+button {
+    background: #1e3799;
+    /* Azul fuerte */
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4a69bd;
+    transform: scale(1.02);
+}
+
+/* ==========================================
+   TARJETAS (Corregido de Rojo a Azul)
+   ========================================== */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-top: 25px;
+    border-left: 6px solid #4a69bd;
+    /* Detalle elegante en el borde */
+}
+
+/* DETALLE PEDIDO */
+h3 {
+    margin-top: 25px;
+    color: #2f3542;
+    font-size: 20px;
+}
+
+/* TABLAS RESPONSIVAS */
+@media (max-width:900px) {
+    table {
+        font-size: 12px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    a {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

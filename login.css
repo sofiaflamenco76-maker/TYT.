@@ -1,0 +1,130 @@
+/* ==========================================
+   ANIMACIONES
+   ========================================== */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ==========================================
+   FONDO GENERAL
+   ========================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    background: #f4f7f9;
+    /* Fondo suave unificado */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Centra el login verticalmente */
+    margin: 0;
+    padding: 20px;
+    color: #2f3542;
+}
+
+/* TITULO */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3799;
+    /* Azul oscuro opaco */
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   FORMULARIO (Estilo Premium)
+   ========================================== */
+form {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    /* Un poco más ancho y responsivo */
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #4a69bd;
+    /* Detalle azul opaco arriba */
+    box-sizing: border-box;
+    animation: fadeInScale 0.6s ease-out;
+}
+
+/* ETIQUETAS (Opcional si usas <label>) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a69bd;
+}
+
+/* ==========================================
+   INPUTS (Azules Opacos al enfocar)
+   ========================================== */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background: #f8f9fa;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a69bd;
+    background: white;
+    box-shadow: 0 0 8px rgba(74, 105, 189, 0.2);
+}
+
+/* ==========================================
+   BOTÓN DE ACCESO
+   ========================================== */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #1e3799;
+    /* Azul fuerte opaco */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #4a69bd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 55, 153, 0.3);
+}
+
+/* ENLACES (Por si tienes un "Registrarse") */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+a {
+    color: #4a69bd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

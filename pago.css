@@ -1,0 +1,160 @@
+/* ==========================================
+   ANIMACIONES AVANZADAS
+   ========================================== */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ==========================================
+   ESTILOS GENERALES
+   ========================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f7f9;
+    /* Fondo muy suave */
+    color: #2f3542;
+    animation: fadeIn 0.8s ease-in;
+}
+
+h2 {
+    color: #4a69bd;
+    /* Azul Opaco Principal */
+    border-bottom: 2px solid #4a69bd;
+    padding-bottom: 10px;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* ==========================================
+   TABLA DE PRODUCTOS (Resumen)
+   ========================================== */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    animation: slideIn 0.7s ease-out;
+}
+
+table th {
+    background-color: #4a69bd;
+    /* Azul Opaco */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #dcdde1;
+    text-align: center;
+}
+
+/* ==========================================
+   FORMULARIO DE ENVÍO
+   ========================================== */
+form {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #4a69bd;
+    /* Detalle en azul opaco */
+    animation: slideIn 0.9s ease-out;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a69bd;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(74, 105, 189, 0.2);
+}
+
+/* ==========================================
+   BOTONES
+   ========================================== */
+button[name="confirmar"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #1e3799;
+    /* Azul más oscuro opaco */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+button[name="confirmar"]:hover {
+    background-color: #5e81e2;
+    animation: pulse 1s infinite;
+    /* El botón "late" cuando pasas el mouse */
+}
+
+/* Panel de Transferencia */
+#transferencia {
+    background-color: #ebf0f7;
+    border-left: 5px solid #4a69bd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    animation: fadeIn 0.5s;
+}
